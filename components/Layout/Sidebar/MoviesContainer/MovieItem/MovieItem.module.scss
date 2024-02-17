@@ -1,0 +1,37 @@
+.item {
+    @apply mb-4 flex items-stretch;
+
+    >a {
+        >img {
+            @apply rounded-image transition-colors;
+            border: solid transparent !important;
+        }
+
+        &:hover {
+            >img {
+                border-color: var(--primary-color) !important;
+            }
+        }
+    }
+
+    .info {
+        @apply ml-4 flex flex-col justify-between;
+        width: 67%;
+
+        .title {
+            @apply text-white text-base font-medium truncate;
+        }
+
+        .genres {
+            @apply text-gray-600 text-xs;
+        }
+
+        .rating {
+            @apply flex items-center mb-2;
+
+            >svg {
+                @apply fill-yellow-700 mr-2 text-lg
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+li.active{
+    @apply border-r-primary w-full;
+
+    >a>span{
+        @apply text-white
+    }
+
+    >a>svg{
+        @apply fill-primary
+    }
+  }

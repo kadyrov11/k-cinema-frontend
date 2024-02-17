@@ -1,0 +1,16 @@
+.placeholder {
+    @apply flex absolute top-0 left-0 w-full h-full bg-gray-800 bg-opacity-70 ;
+
+    >div {
+        @apply m-auto text-center;
+
+        >p{
+            @apply mb-4
+        }
+
+    }
+}
+
+.btn {
+    @apply btn-primary py-2 px-7 text-lg h-12 ;
+}   

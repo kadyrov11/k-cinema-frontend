@@ -1,0 +1,11 @@
+.container {
+    @apply px-1 py-4 animate-fade;
+
+    .heading {
+        @apply font-bold text-lg mb-5 text-white capitalize;
+    }
+
+    .btn {
+        @apply p-2.5 btn-primary block text-center;
+    }
+}
