@@ -23,7 +23,6 @@ const SlideItem: FC<ISlideItem> = ({ slide, buttonTitle = 'Watch' }) => {
                     src={slide.bigPoster}
                     className={styles.image}
                     priority
-                    unoptimized
                     draggable={false}
                 />)}
             <div className={styles.content}>

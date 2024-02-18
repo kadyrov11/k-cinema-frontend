@@ -37,7 +37,6 @@ const PopularMovie: FC = () => {
                             alt={movie.title}
                             width={285}
                             height={100}
-                            unoptimized
                             className={styles.image}
                         />
                     </Link>

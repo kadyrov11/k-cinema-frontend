@@ -6,10 +6,9 @@ import { removeTokens } from '@/services/auth/auth.helper'
 import { AuthService } from '@/services/auth/auth.service'
 
 import { errorCatch, getContentType } from './api.helpers'
-import { IS_PRODUCTION } from '@/configs/constants'
 
 export const axios = req.create({
-	baseURL: IS_PRODUCTION ? API_URL : API_SERVER_URL,
+	baseURL: API_SERVER_URL,
 	headers: getContentType(),
 })
 
