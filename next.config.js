@@ -11,11 +11,11 @@ const nextConfig = {
 		return [
 			{
 				source: '/api/:path*',
-				destination: `https://k-cinema-backend.vercel.app/api/:path*`,
+				destination: `https://k-cinema-backend-production.up.railway.app/api/:path*`,
 			},
 			{
 				source: '/uploads/:path*',
-				destination: `https://k-cinema-backend.vercel.app/uploads/:path*`,
+				destination: `https://k-cinema-backend-production.up.railway.app/uploads/:path*`,
 			},
 		]
 	},
