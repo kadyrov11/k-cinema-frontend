@@ -40,11 +40,7 @@ export const MovieService = {
 		return axiosBearer.get<IMovieEditInput>(getMoviesUrl(`/${_id}`))
 	},
 	async getBySlug(slug: string) {
-		return axios.get<IMovie>(getMoviesUrl(`/slug/${slug}`), {
-			headers: {
-				'Cache-Control': 'max-age=20',
-			},
-		})
+		return axios.get<IMovie>(getMoviesUrl(`/slug/${slug}`))
 	},
 	async update(_id: string, data: IMovieEditInput) {
 		return axiosBearer.put(getMoviesUrl(`/${_id}`), data)

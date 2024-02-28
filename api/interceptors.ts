@@ -13,7 +13,7 @@ export const axios = req.create({
 })
 
 const instance = req.create({
-	baseURL: API_URL,
+	baseURL: API_SERVER_URL,
 	headers: getContentType(),
 })
 
