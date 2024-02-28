@@ -54,7 +54,7 @@ const Movie: FC = () => {
                             generate={() => setValue('slug', generateSlug(getValues('title')))}
                         />
                         <Field {...register('parameters.country', { required: "Icon is required" })}
-                            placeholder='Icon'
+                            placeholder='Country'
                             error={errors?.parameters?.country}
                             style={{ width: '31%' }}
                         />

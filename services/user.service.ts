@@ -15,7 +15,7 @@ export const UserService = {
 			params: searchTerm ? { searchTerm } : {},
 		})
 	},
-	async getFavorites(searchTerm?: string) {
+	async getFavorites() {
 		return axiosBearer.get<IMovie[]>(getUsersUrl('/profile/favorites'))
 	},
 	async getById(_id: string) {
