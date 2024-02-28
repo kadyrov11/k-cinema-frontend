@@ -8,7 +8,7 @@ export const saveTokens = (data: ITokens) => {
 }
 
 export const removeTokens = () => {
-	Cookies.remove('refreshToken')
+	Cookies.remove('accessToken')
 	Cookies.remove('refreshToken')
 }
 
