@@ -12,7 +12,6 @@ import styles from './FavoriteBtn.module.scss'
 const FavoriteBtn: FC<{ movieId: string }> = ({ movieId }) => {
     const { user } = useAuth()
 
-
     const [isFavorite, setIsFavorite] = useState(false)
 
     const { favoritesMovies, refetch } = useFavorites()

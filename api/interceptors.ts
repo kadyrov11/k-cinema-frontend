@@ -12,9 +12,14 @@ export const axios = req.create({
 	headers: getContentType(),
 })
 
+const accessToken = Cookies.get('accessToken')
+
 const instance = req.create({
 	baseURL: API_SERVER_URL,
-	headers: getContentType(),
+	headers: {
+		...getContentType(),
+		Authorization: 'Bearer ' + accessToken,
+	},
 })
 
 instance.interceptors.request.use((config) => {
