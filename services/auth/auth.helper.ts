@@ -3,6 +3,7 @@ import Cookies from 'js-cookie'
 import { IAuthResponse, ITokens } from '@/store/user/user.interface'
 
 export const saveTokens = (data: ITokens) => {
+	console.log(data)
 	Cookies.set('accessToken', data.accessToken)
 	Cookies.set('refreshToken', data.refreshToken)
 }
